@@ -45,7 +45,12 @@ export default function Home({
       {nodes?.length ? (
         nodes.map((node) => (
           <div key={node.id}>
-            <ArticleTeaser node={node} />
+            <ArticleTeaser
+              node={{
+                ...node,
+                path: { ...node.path, alias: `/old/${node.path.alias}` },
+              }}
+            />
             <hr className="my-20" />
           </div>
         ))
