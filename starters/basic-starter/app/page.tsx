@@ -1,9 +1,9 @@
 import { ArticleTeaser } from "@/components/drupal/ArticleTeaser"
 import { drupal } from "@/lib/drupal"
+import type { Metadata } from "next"
 import type { DrupalNode } from "next-drupal"
 
 export const metadata: Metadata = {
-  title: "Next.js for Drupal",
   description: "A Next.js site powered by a Drupal backend.",
 }
 
